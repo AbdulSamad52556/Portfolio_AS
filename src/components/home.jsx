@@ -44,7 +44,7 @@ const Home = () => {
             {contact && (
               <div className="flex gap-10 p-3 ml-5">
                 <div>
-                  <a href="mailto:wecare@inticure.com">
+                  <a href="mailto:abdulsamad52556@gmail.com">
                     <Mail className="text-white w-5 h-5 cursor-pointer" />
                   </a>
                 </div>
