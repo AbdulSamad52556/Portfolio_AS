@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import CharacterModel from "./characterModel";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Instagram  } from "lucide-react";
 
 const Home = () => {
   const [contact, setContact] = useState(false);
+  const [connect, setConnect] = useState(false);
   return (
     <div className="flex justify-center items-start lg:justify-between bg-[#18061d] px-20 min-h-[100vh]">
       <div className="flex w-2/3 justify-center items-center min-h-[80vh]">
@@ -32,6 +33,9 @@ const Home = () => {
               <br />
             </div>
           </p>
+
+          <div className="flex flex-col gap-5">
+
           <div className="flex">
             <div>
               <button
@@ -48,6 +52,8 @@ const Home = () => {
                     <Mail className="text-white w-5 h-5 cursor-pointer" />
                   </a>
                 </div>
+                
+                
                 <div>
                   <a
                     href="https://wa.me/917356860792"
@@ -60,8 +66,52 @@ const Home = () => {
                 <div></div>
               </div>
             )}
-            <div></div>
+            <div>
+              
+            </div>
           </div>
+          <div className="flex">
+            <div>
+              <button
+                className="bg-[#18061d] hover:border-[#fff4] hover:text-[#fff4] border-2 font-serif duration-300 py-2 px-4 text-white rounded"
+                onClick={() => setConnect(!connect)}
+              >
+                Connect Me
+              </button>
+            </div>
+            {connect && (
+              <div className="flex gap-7 p-3 ml-5">
+                <div>
+                  <a href="https://github.com/AbdulSamad52556">
+                    <Github className="text-white w-5 h-5 cursor-pointer" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/abdul-samad-397364240/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="text-white w-5 h-5 cursor-pointer" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.instagram.com/__.samxd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Instagram className="text-white w-5 h-5 cursor-pointer" />
+                  </a>
+                </div>
+                
+                <div></div>
+              </div>
+            )}
+          </div>
+          </div>
+
+
         </div>
       </div>
       <div className=" h-[90vh] hidden lg:flex justify-end bg-[#18061d] mr-10 ">
