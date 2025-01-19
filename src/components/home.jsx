@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import CharacterModel from "./characterModel";
 import { Mail, Phone, Github, Linkedin, Instagram  } from "lucide-react";
+import myimage from '../assets/images/377252871_1008222327133615_1968005534507269388_n.jpg'
 
 const Home = () => {
   const [contact, setContact] = useState(false);
@@ -114,12 +115,15 @@ const Home = () => {
 
         </div>
       </div>
-      <div className=" h-[90vh] hidden lg:flex justify-end bg-[#18061d] mr-10 group cursor-pointer">
-        <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] duration-300 border-2 rounded-2xl items-center mt-[9%] mr-4 z-0 hover:z-100 hover:group-z-0"></div>
+      <div className=" h-[90vh] hidden lg:flex justify-end bg-[#18061d] mr-10 group cursor-pointer z-0">
+        <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] duration-500 border-2 rounded-2xl items-center mt-[9%] mr-4 z-0 hover:z-20 bg-center bg-cover grayscale hover:grayscale-0"style={{
+    backgroundImage: `url(${myimage})`,
+  }}
+></div>
         <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] border-2 rounded-2xl items-center mt-[10%] mr-10 z-0 bg-[url(https://wallpapercave.com/wp/wp13341595.png)] bg-cover bg-center grayscale group-hover:grayscale-0 duration-500"></div>
 
-        <div className="w-[20vw] bg-transparent z-10 ">
-          <Canvas>
+        <div className="duration-500">
+          <Canvas className="z-10 duration-500 right-10">
             <OrbitControls enableZoom={true} />
             <ambientLight intensity={1.5} />
             <directionalLight position={[10, 10, 30]} intensity={1.5} />

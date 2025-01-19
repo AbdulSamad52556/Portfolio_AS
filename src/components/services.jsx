@@ -4,7 +4,8 @@ import MyImage from "../assets/images/WhatsApp Image 2025-01-19 at 9.14.37 AM.jp
 import cabquest from '../assets/images/WhatsApp Image 2025-01-19 at 4.33.49 PM.jpeg'
 import audsculpt from '../assets/images/image1.png'
 import spenmax from '../assets/images/image2.png'
-import skystream from '../assets/images/image.png'
+import skystream from '../assets/images/image3.png'
+import ebbs from '../assets/images/image.png'
 
 const Services = () => {
   return (
@@ -102,6 +103,29 @@ algorithms and secure payment systems.
               <Link2Icon className="text-white w-5 h-5 cursor-pointer scale-100 hover:scale-125 duration-300" />
             </a>
             <a href="https://github.com/cabquest" target="__blank">
+              <Github className="text-white w-5 h-5 cursor-pointer scale-100 hover:scale-125 duration-300" />
+            </a>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded overflow-hidden shadow-lg p-3">
+        <img
+          class="w-full rounded grayscale hover:grayscale-0 duration-300 cursor-pointer"
+          src={ebbs}
+          alt="Sunset in the mountains"
+        />
+        <div class="px-6 py-4">
+          <div className="font-bold text-xl font-serif mb-2 text-white text-center">
+          Alams
+          </div>
+          <p className=" text-sm font-serif text-white">
+          Is an e-commerce platform offering a curated selection of books, bringing timeless stories and immersive reading experiences to book lovers everywhere.          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 flex gap-5">
+        <a href="https://alams.onrender.com/" target="__blank">
+              <Link2Icon className="text-white w-5 h-5 cursor-pointer scale-100 hover:scale-125 duration-300" />
+            </a>
+            <a href="https://github.com/AbdulSamad52556/Alams" target="__blank">
               <Github className="text-white w-5 h-5 cursor-pointer scale-100 hover:scale-125 duration-300" />
             </a>
         </div>
