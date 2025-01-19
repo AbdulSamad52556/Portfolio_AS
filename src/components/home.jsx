@@ -8,7 +8,7 @@ const Home = () => {
   const [contact, setContact] = useState(false);
   const [connect, setConnect] = useState(false);
   return (
-    <div className="flex justify-center items-start lg:justify-between bg-[#18061d] px-20 min-h-[100vh]">
+    <div className="flex justify-center items-start lg:justify-between bg-[#18061d] px-20 min-h-[100vh] ">
       <div className="flex w-2/3 justify-center items-center min-h-[80vh]">
         <div className="flex flex-col gap-10">
           <h1 className="text-white text-5xl font-bold font-serif">
@@ -114,11 +114,11 @@ const Home = () => {
 
         </div>
       </div>
-      <div className=" h-[90vh] hidden lg:flex justify-end bg-[#18061d] mr-10 ">
-        <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] duration-300 border-2  rounded-2xl items-center mt-[9%] mr-4 z-0"></div>
-        <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] duration-300 border-2 rounded-2xl items-center mt-[10%] mr-10 z-0"></div>
+      <div className=" h-[90vh] hidden lg:flex justify-end bg-[#18061d] mr-10 group cursor-pointer">
+        <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] duration-300 border-2 rounded-2xl items-center mt-[9%] mr-4 z-0 hover:z-100 hover:group-z-0"></div>
+        <div className="absolute h-[50vh] w-[20vw] bg-[#18061d] border-[#ffffff] border-2 rounded-2xl items-center mt-[10%] mr-10 z-0 bg-[url(https://wallpapercave.com/wp/wp13341595.png)] bg-cover bg-center grayscale group-hover:grayscale-0 duration-500"></div>
 
-        <div className="w-[20vw] bg-transparent z-10">
+        <div className="w-[20vw] bg-transparent z-10 ">
           <Canvas>
             <OrbitControls enableZoom={true} />
             <ambientLight intensity={1.5} />

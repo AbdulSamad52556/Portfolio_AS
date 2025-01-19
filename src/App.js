@@ -20,7 +20,7 @@ function App() {
   };
   
   return (
-    <div className=" bg-[#18061d] overflow-hidden">
+    <div className=" bg-[#18061d] overflow-hidden ">
       <Header props={val} />
       <AnimatePresence mode="wait">
         {nav === 'Home' ? (
