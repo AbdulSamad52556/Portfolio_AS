@@ -22,7 +22,7 @@ function App() {
   return (
     <div className=" bg-[#18061d] overflow-hidden">
       <Header props={val} />
-      <AnimatePresence mode="wait"> {/* Adds support for exit animations */}
+      <AnimatePresence mode="wait">
         {nav === 'Home' ? (
           <motion.div
             key="Home"
